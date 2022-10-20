@@ -7,6 +7,28 @@
   .title {
     width: 100%;
   }
+  .menu-section {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .menu-bar {
+    font-size: calc(1vw + 1.4rem);
+  }
+  .title {
+    width: 50%;
+    height: 50%;
+  }
+  .subtitle {
+    align-self: center;
+    font-family: "Birthstone", cursive;
+    font-size: calc(1vw + 0.8rem);
+    font-weight: 600;
+    color: #000;
+    padding-left: 1rem;
+  }
+  .icon-foot {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 1274px) {
@@ -32,6 +54,24 @@
     width: 100%;
     margin-left: 0rem;
   }
+  .menu-bar {
+    font-size: calc(1vw + 1.4rem);
+  }
+  .title {
+    width: 50%;
+    height: 50%;
+  }
+  .subtitle {
+    align-self: center;
+    font-family: "Birthstone", cursive;
+    font-size: calc(1vw + 0.8rem);
+    font-weight: 600;
+    color: #000;
+    padding-left: 1rem;
+  }
+  .icon-foot {
+    font-size: 28px;
+  }
   .container {
     grid-template-columns: repeat(2, auto);
     background-color: #f3dabb;
@@ -41,13 +81,28 @@
     height: 0%;
   }
 }
-/* @media (max-width: 398px) {
+@media (max-width: 375px) {
   .menu-section {
     width: 100%;
     margin-left: 0rem;
   }
-  .container {
-    grid-template-columns: repeat(2, auto);
-    background-color: #f3dabb;
+  .menu-bar {
+    font-size: calc(1vw + 1rem);
+    padding-left: 0px;
   }
-} */
+  .title {
+    width: 50%;
+    height: 50%;
+  }
+  .subtitle {
+    align-self: center;
+    font-family: "Birthstone", cursive;
+    font-size: calc(1vw + 0.8rem);
+    font-weight: 600;
+    color: #000;
+    padding-left: 1rem;
+  }
+  .icon-foot {
+    font-size: 18px;
+  }
+}

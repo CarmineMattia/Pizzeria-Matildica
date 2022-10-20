@@ -44,7 +44,7 @@ body {
 /* NAV  */
 .nav {
   display: flex;
-  padding: 50px;
+  padding-top: 30px;
   text-align: center;
   justify-content: center;
   margin-right: 1em;
@@ -69,6 +69,65 @@ body {
   color: #000;
   padding-left: 1rem;
 }
+/* ************************************* */
+/* Nav bar selezione pizze*/
+.menu-bar {
+  background-color: #e7b577;
+  height: 100%;
+  padding: 2px;
+  font-size: calc(1vw + 2.4rem);
+  font-weight: 600;
+  padding: 0.5em;
+  text-transform: capitalize;
+  position: sticky;
+  top: 0px;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: -webkit-sticky;
+  height: 4.5rem;
+}
+.menu-li {
+  list-style: none;
+}
+.menu-link {
+  display: block;
+  color: #343a40;
+  text-decoration: none;
+  padding: 0.5em;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.menu-link :visited,
+.menu-link :link {
+  color: #000;
+}
+.menu-link :active,
+.menu-link:hover {
+  color: #000;
+  transition: all 0.3s;
+}
+/* menu underline animation */
+.menu-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.menu-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /* **************************** */
 /* HERO */
 /* **************************** */
@@ -131,7 +190,7 @@ body {
   /* margin: 5rem; */
 }
 .nav-menu-p {
-  font-family: "Jim Nightshade", cursive;
+  font-family: "birthstone", cursive;
   font-size: calc(1vw + 3em);
   color: #343a40;
   text-transform: uppercase;
@@ -165,24 +224,24 @@ body {
 }
 .pizza-name {
   color: #343a40;
-  font-family: sans-serif;
+  font-family: "Birthstone", cursive;
   font-size: calc(1vw + 1.3em);
-  line-height: 2em;
+  font-weight: 600;
+  /* line-height: 2em; */
   list-style: none;
   text-align: center;
 }
 .ingridients {
   color: #000;
-  line-height: 2rem;
-
-  font-family: "Birthstone", cursive;
+  line-height: 3rem;
+  font-weight: 400;
+  font-family: sans-serif;
   text-align: center;
-  line-height: 0.8em;
   font-size: calc(1vw + 0.8em);
 }
 .price {
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
   color: #343a40;
 }
 .right-side {
@@ -216,8 +275,8 @@ body {
 
 .icon-foot {
   color: #f0daca;
-  font-size: 24px;
-  min-width: 2rem;
+  font-size: 32px;
+  min-width: 3rem;
 }
 
 .foot-terms-link:link,
