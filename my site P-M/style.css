@@ -1,26 +1,3 @@
-/* font-family: 'Birthstone', cursive;
-font-family: 'Caramel', cursive;
-font-family: 'Jim Nightshade', cursive;
-font-family: 'UnifrakturCook', cursive;
-font-family: 'UnifrakturMaguntia', cursive; */
-
-/* FONT SIZE */
-/* 3.815rem/61.04px	 */
-/* 3.052rem/48.83px	 */
-/* 2.441rem/39.06px	 */
-/* 1.953rem/31.25px	 */
-/* 1.563rem/25.00px	 */
-/* 1.25rem/20.00px	 */
-/* 1rem/16.00px	 */
-/* 0.8rem/12.80px	 */
-/* 0.64rem/10.24px	 */
-/* 0.512rem/8.19px	 */
-
-/* COLORO */
-/* #d8b155 */
-/* #e1a255 */
-/* #5e6166 */
-/* ****************** */
 /* GENERAL */
 html {
   scroll-behavior: smooth;
@@ -51,13 +28,8 @@ body {
 }
 .title {
   border-right: 1px black solid;
-  font-family: "UnifrakturMaguntia", cursive;
-  /* font-size: 3.052rem; */
-  font-size: calc(1vw + 3.052rem);
   font-weight: 600;
-  color: #343a40;
   padding-right: 1rem;
-  text-transform: capitalize;
   width: 100%;
   height: auto;
 }
@@ -66,7 +38,7 @@ body {
   font-family: "Birthstone", cursive;
   font-size: calc(1vw + 1.4rem);
   font-weight: 600;
-  color: #000;
+  color: #8d171e;
   padding-left: 1rem;
 }
 /* ************************************* */
@@ -80,14 +52,15 @@ body {
   padding: 0.5em;
   text-transform: capitalize;
   position: sticky;
-  top: 0px;
+  top: 0%;
 }
 .menu-list {
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: -webkit-sticky;
-  height: 4.5rem;
+  height: 2rem;
+  padding-left: 0px;
 }
 .menu-li {
   list-style: none;
@@ -96,18 +69,18 @@ body {
   display: block;
   color: #343a40;
   text-decoration: none;
-  padding: 0.5em;
+  padding: 0em;
   letter-spacing: 2px;
   position: relative;
 }
 
 .menu-link :visited,
 .menu-link :link {
-  color: #000;
+  color: #8d171e;
 }
 .menu-link :active,
 .menu-link:hover {
-  color: #000;
+  color: #8d171e;
   transition: all 0.3s;
 }
 /* menu underline animation */
@@ -116,16 +89,16 @@ body {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #000;
-  transform-origin: bottom right;
+  background-color: #8d171e;
+  transform-origin: top right;
   transition: transform 0.25s ease-out;
 }
 .menu-link:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: top left;
 }
 
 /* **************************** */
@@ -153,11 +126,11 @@ body {
   padding: 0.5rem;
   text-align: center;
   font-family: "Birthstone", cursive;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: calc(1vw + 3.4rem);
   font-weight: 500;
   padding-right: 1rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 .button {
   padding: 0.2em 0.5em;
@@ -170,9 +143,9 @@ body {
 
 .button:hover {
   transform: scale(1.2) rotate(10deg);
-  background-color: #e7b577;
-  border: 4px solid #e7b577;
-  color: #343a40;
+  background-color: #8d171e;
+  border: 4px solid #8d171e;
+  color: #f3dabb;
   cursor: pointer;
 }
 /* *********************************** */
@@ -187,13 +160,12 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  /* margin: 5rem; */
 }
 .nav-menu-p {
   font-family: "birthstone", cursive;
   font-size: calc(1vw + 3em);
   color: #343a40;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 400;
 }
 /* ******************************* */
@@ -222,18 +194,27 @@ body {
   background-color: #e1a255;
   letter-spacing: 3px;
 }
+
+#gustose {
+  background-color: #9d2222;
+}
+#almetro {
+  background-color: #e96f6f;
+}
+#bianche {
+  background-color: #f9ecdd;
+  color: #343a40;
+}
 .pizza-name {
   color: #343a40;
   font-family: "Birthstone", cursive;
-  font-size: calc(1vw + 1.3em);
+  font-size: calc(1vw + 1.9em);
   font-weight: 600;
-  /* line-height: 2em; */
   list-style: none;
   text-align: center;
 }
 .ingridients {
   color: #000;
-  line-height: 3rem;
   font-weight: 400;
   font-family: sans-serif;
   text-align: center;
@@ -301,20 +282,7 @@ body {
   border-left: 1px solid #343a40;
   height: 100%;
 }
-
-/* FONT SIZE */
-/* 3.815rem/61.04px	 */
-/* 3.052rem/48.83px	 */
-/* 2.441rem/39.06px	 */
-/* 1.953rem/31.25px	 */
-/* 1.563rem/25.00px	 */
-/* 1.25rem/20.00px	 */
-/* 1rem/16.00px	 */
-/* 0.8rem/12.80px	 */
-/* 0.64rem/10.24px	 */
-/* 0.512rem/8.19px	 */
-/* font-family: 'Birthstone', cursive;
-font-family: 'Caramel', cursive;
-font-family: 'Jim Nightshade', cursive;
-font-family: 'UnifrakturCook', cursive;
-font-family: 'UnifrakturMaguntia', cursive; */
+.red-i {
+  color: #000;
+}
+/* <!-- last update 03/11/2022 ore 17.25 --> */
