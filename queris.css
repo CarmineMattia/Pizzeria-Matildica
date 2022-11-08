@@ -18,6 +18,9 @@
     width: 50%;
     height: 50%;
   }
+  .ingridients {
+    font-size: 0.8em;
+  }
   .subtitle {
     align-self: center;
     font-family: "Birthstone", cursive;
@@ -69,6 +72,9 @@
     color: #000;
     padding-left: 1rem;
   }
+  .ingridients {
+    font-size: 0.8em;
+  }
   .icon-foot {
     font-size: 28px;
   }
@@ -93,6 +99,9 @@
   .title {
     width: 50%;
     height: 50%;
+  }
+  .ingridients {
+    font-size: 0.8em;
   }
   .subtitle {
     align-self: center;
