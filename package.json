@@ -1,0 +1,19 @@
+{
+  "name": "pizzeria-matildica",
+  "version": "1.0.0",
+  "description": "Small project (menu) that i have sold to a pizzeria near by me 🍕👨‍💻🤩",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "airtable": "^0.12.2",
+    "netlify-cli": "^17.38.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
