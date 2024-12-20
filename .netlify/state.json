@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Modena",
+			"country": {
+				"code": "IT",
+				"name": "Italy"
+			},
+			"subdivision": {
+				"code": "45",
+				"name": "Emilia-Romagna"
+			},
+			"timezone": "Europe/Rome",
+			"latitude": 44.6534,
+			"longitude": 10.9231,
+			"postalCode": "41100"
+		},
+		"timestamp": 1734702923181
+	}
+}
