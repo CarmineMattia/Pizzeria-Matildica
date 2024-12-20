@@ -33,6 +33,7 @@ exports.handler = async function(event, context) {
 
     records.forEach(record => {
       let category = record.get('Category');
+      console.log('Processing record:', record.get('Name'), 'Category:', category);
       if (categories[category]) {
         categories[category].push({
           id: record.id,
@@ -46,24 +47,26 @@ exports.handler = async function(event, context) {
 
     // Sort items in each category by order
     Object.keys(categories).forEach(category => {
-      categories[category].sort((a, b) => (a.order || 0) - (b.order || 0));
+      categories[category].sort((a, b) => (parseInt(a.order) || 0) - (parseInt(b.order) || 0));
     });
 
-    console.log('Successfully processed records');
     return {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Allow-Methods": "GET, POST, OPTION",
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify(categories)
     };
-  } catch (err) {
-    console.error('Error in getMenu:', err);
+  } catch (error) {
+    console.error('Error in getMenu:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Failed to fetch data', details: err.message })
+      body: JSON.stringify({ 
+        error: 'Failed to fetch data', 
+        details: error.message,
+        stack: error.stack 
+      })
     };
   }
-}
+};
