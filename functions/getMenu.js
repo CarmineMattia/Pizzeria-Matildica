@@ -28,7 +28,8 @@ exports.handler = async function(event, context) {
     const categories = {
       'Gustose': [],
       'Bianche': [],
-      'Al Metro': []
+      'Al Metro': [],
+      'Piadine': []
     };
 
     records.forEach(record => {
